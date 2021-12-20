@@ -6,7 +6,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior:auto;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -18,11 +18,11 @@ html{
     font-family: 'Rubik', sans-serif; */
 }
 
-.row{
+.rows{
     width: 100%;
 }
 
-.row::after{
+.rows::after{
     clear: both;
     content: '';
     display: block;
@@ -67,17 +67,13 @@ nav ul li a{
     text-decoration: none;
     color: white;
     line-height: 70px;
-    padding: 0 20px;
+    padding: 0px 20px;
     text-transform: uppercase;
     font-size: 1.1rem;
     font-family: 'Rubik', sans-serif;
     transition: 0.4s;
     border-radius: 10px;
 }
-nav ul li a:hover{
-    background: rgb(69, 212, 134);
-}
-
 /* header ends */
 /*order now*/
 .btna {
@@ -163,9 +159,21 @@ nav ul li a:hover{
     color: rgb(255, 255, 255);
     font-weight: 600;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 2.7rem;
+    border-radius: 10px;
     font-family: 'Handlee', cursive;
+    animation: blur 1s ease-in-out infinite alternate;
 }
+@-webkit-keyframes blur {
+    from {
+      text-shadow: 0 0 10px rgb(0, 183, 255), 0 0 20px rgb(0, 183, 255), 0 0 30px rgb(0, 183, 255), 0 0 40px rgb(0, 183, 255), 0 0 50px skyblue, 0 0 60px skyblue, 0 0 70px rgb(0, 153, 255);
+    }
+    
+    to {
+      text-shadow: 0 0 60px skyblue, 0 0 30px skyblue, 0 0 40px skyblue, 0 0 50px rgb(6, 184, 255), 0 0 60px rgb(0, 183, 255), 0 0 70px rgb(0, 183, 255), 0 0 80px rgb(0, 110, 255);
+    }
+  }
+
 
 @-webkit-keyframes glow {
     from {
@@ -214,10 +222,10 @@ nav ul li a:hover{
 #menu-section{
     padding: 1%;
 }
-.card-body{
+.card-bodyy{
     text-align: center;
 }
-.card-body img{
+.card-bodyy img{
     max-width: 100%;
     height: auto;
     display: block;
@@ -242,11 +250,11 @@ nav ul li a:hover{
     text-transform: uppercase;
     font-family: 'Handlee', cursive;
 }
-.card{
+.cardd{
     transition: 0.4s;
     margin: 10px;
 }
-.card:hover{
+.cardd:hover{
     transform: scale(1.1);
 }
 /*food menu ends*/
@@ -354,11 +362,11 @@ nav ul li a:hover{
     }
     nav ul li a{
         display: inline-block;
-        transition: 0.5s;
+        transition: 0.4s;
     }
     nav ul li a:hover{
         background: transparent;
-        transform: scale(1.2)
+        transform: scale(1.1)
     }
     
 /*banner starts*/
