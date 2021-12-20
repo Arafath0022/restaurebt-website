@@ -133,7 +133,6 @@ nav ul li a{
 #banner-section{
     background-image: url(images/banner-image.jpg);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
